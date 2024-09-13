@@ -1,0 +1,161 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  height: 100vh;
+  width: 100%;
+}
+
+#root {
+  height: 100vh;
+  width: 100%;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.flex-row {
+  flex-direction: row;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.px-10 {
+  padding: 10px;
+}
+
+.mt-50 {
+  margin-top: 50px;
+}
+
+.mt-10 {
+  margin-top: 10px;
+}
+
+.messages {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  height: 60%;
+  overflow-y: scroll;
+  padding: 0 20px;
+
+  margin: 50px auto 0 auto;
+  width: 80%
+}
+
+.message {
+  width: fit-content;
+  max-width: 80%;
+  padding: 4px 10px;
+  border-radius: 10px 6px 6px 6px;
+}
+
+.message p {
+  margin-top: 2px;
+}
+
+.left {
+  position: relative;
+  background-color: #3d4f3e;
+  align-self: flex-start;
+}
+
+.right {
+  position: relative;
+  align-self: flex-end;
+  background-color: #4CAF50;
+}
+
+.messageForm {
+  width: 80%;
+  margin: 100px auto 0 auto;
+}
+
+.messageInput {
+  width: 80%;
+  outline: none;
+  padding: 16px 24px;
+  font-size: 16px;
+}
+.messageButton {
+  width: 20%;
+  padding: 16px 24px;
+  background-color: #4CAF50;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 0px;
+  outline: none;
+}
+
+.messageHeader {
+  margin-top: 50px;
+  height: 10%;
+  width: 100%;
+  text-align: center;
+}
+
+.left::before {
+  left: -11px;
+  top: 1px;
+  content: "";
+  position: absolute;
+	width: 0;
+	height: 0;
+	border-top: 8px solid transparent;
+	border-right: 16px solid #3d4f3e;
+	border-bottom: 8px solid transparent;
+}
+
+.right::before {
+  right: -11px;
+  top: 1px;
+  content: "";
+  position: absolute;
+	width: 0;
+	height: 0;
+	border-top: 8px solid transparent;
+	border-left: 16px solid #4CAF50;
+	border-bottom: 8px solid transparent;
+}
+
+.set-user-form {
+  width: 100%;
+  text-align: center;
+}
+
+.set-user-input {
+  margin-top: 50px;
+  text-align: center;
+  width: 90%;
+  max-width: 500px;
+  outline: none;
+  padding: 16px 24px;
+  font-size: 20px;
+  border: 1px solid #ccc;
+  border-radius: 50px;
+  background-color: transparent;
+}
